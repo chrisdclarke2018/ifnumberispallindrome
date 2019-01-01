@@ -1,0 +1,18 @@
+## This problem was asked by Palantir  202
+## Daily Coding Problem, check if a certain integer is a pallindrome without converting to string..
+## this was a kind of interesting one, obviously if we could convert to string its easy...
+## when we consider the modulus operator , i
+
+
+def checknum(num):
+   temp = num
+   rev = 0
+   while (num >0):
+      dec = num%10
+      rev= rev * 10+dec
+      num = (num-dec)/10
+   if (rev==temp):
+      print('pallindrone')
+   else:
+      print('not a pallindrone')
+
